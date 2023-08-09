@@ -1,0 +1,20 @@
+<script>
+
+
+
+    var figura = prompt("Jakiej figury chcesz liczyc pole? 1 - prostokat, 2 - kolo");
+    
+    if(figura == "1" || figura == "prostokat"){
+        var bok1 = Number(prompt("Podaj dlugosc boku a:"));
+        var bok2 = Number(prompt("Podaj dlugosc boku b:"));
+        var pole_prostokata = bok1 * bok2;
+        console.log(pole_prostokata);
+    }
+    else if(figura == "2" || figura == "kolo"){
+        var promien = Number(prompt("Podaj dlugosc promienia:"));
+        var pole_kola = Math.PI * Math.pow(promien, 2);
+        console.log(pole_kola); 
+    }
+    
+    
+    </script>

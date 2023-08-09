@@ -1,0 +1,105 @@
+<script>
+/*
+    var test = 5;
+
+    if (test == 10){
+        var test2 = "hello";
+    }
+
+    console.log(test)
+
+   */ // przyklad z glownym korytarzem i pokojami gotelowymi, do ktorych nie mozna wchodzic bez dostepu.
+
+     //funckje strzalkowe ES6
+
+/*     
+     function myFun(){
+        alert("Hello");
+     }
+
+------->
+
+ myFun1 = () => {alert("Hello");}
+*/
+
+
+    /*
+    //ES5   
+    function myFun2(r){
+        var promien = 3.14*r*r; 
+        return promien;
+    }
+    var odp = myFun2(9);
+    console.log(odp);
+*/
+
+/*
+    //ES6
+    myFun2 = (r) => {
+        var promien = 3.14*r*r; 
+        return promien;
+    }
+
+    var odp = myFun2(9);
+    console.log(odp);
+*/
+
+
+/*
+jesli parametr w funkcji myFun w nawiasie jest jeden, to mozna rowniez pominac nawias.
+    function myFun2(r){
+        var promien = 3.14*r*r; 
+        return promien;
+
+-------->
+
+    function myFun2 r {
+        var promien = 3.14*r*r; 
+        return promien;
+*/
+
+/* let eliminuje zakres widocznosci, i zastepuje slowo var.
+w klasycznym zasosotwaniu var i console log, console log zczytuje var z gory, bo jest nadpisywanie.
+OD TEGO MOMENTU UZYWAMY LET!
+przy let zakres widocznosci jest trzymany.
+
+    let test = 5;
+
+    if (test == 10){
+        let test2 = "hello";
+    }
+    console.log(test2);
+
+czyli jak pytamy o test2, to panel dolny pokazuje undefines, przy zapytaniu o test, a przy console log test pokazalby 5.
+
+*/
+
+/*
+zmienne stale
+
+let imie;
+imie = "Robert";
+
+------------>
+
+const PI = "Robert"
+PI = "Kasia" // tu pokazuje undefined, bo raz stworzona const PI pozostaje niezmienna.
+console.log(PI);
+
+--------->
+
+const PI = "Robert" // tu jest pierwsza deklaracja
+const PI = "Kasia" // znowu wyskakuje blad o ponownej deklaracji
+console.log(PI);
+
+--------->
+prawidlowy zapis 
+
+const PI = "Robert"
+console.log(PI)
+*/
+
+
+
+
+</script>

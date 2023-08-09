@@ -1,0 +1,115 @@
+<script>
+/*
+let x = [22, 33, 44];
+console.log(x);
+
+numeracja 22, 33, 44 zaczyna sie od 0
+           0   1   2
+tu pomysl o przykladzie komody i szuflad
+*/
+
+/*
+let x = [22, 33, 44];
+console.log(x);
+x.push(100);
+console.log(x);
+x.push(55);
+console.log(x);
+
+numeracja 22, 33, 44, 100, 55 zaczyna sie od 0
+           0   1   2   3    4
+tu pomysl o przykladzie komody i szuflad, jest powiekszana o pushe, rozpycha czyli powieksza komode
+*/
+
+/*
+CONST NIE DZIALA NA TABLICACH!
+*/
+
+/*
+let x = [22, 33, 44];
+console.log(x);
+X[1] = 120
+console.log(x);
+
+numeracja 22, 120, 44 zaczyna sie od 0
+           0   1   2   
+tu pomysl o przykladzie komody i szuflad, wartosc 1 zmienia na 120.
+*/
+
+/*
+let a = 10;
+let b = a;
+a = 5;
+console.log(a,b);
+
+let a = [11, 22, 33];
+let b = a;
+a[1] = 100;
+console.log(a,b);
+--------->
+let a = [11, 22, 33];
+let b = a; // przy wiekszej ilosci danych nie mozna przypisywac wartosci! wiec ten zapis jest nieprawidlowy!
+a[1] = 100;
+console.log(a,b);
+----->
+a = [11, 100, 33];
+b = [11, 100, 33];
+*/
+
+// typy sekwencyjne przechowuja duzo wartosci
+
+/*
+tablica przechowuje indeksy, mozna przechowywac rozne typt danych
+let dane = ["aaa", "bbb", 123, 12345, 6543, true, 33.444]
+*/
+
+/*
+var imie = ["Ola", "Tomasz", "Wojtek"];
+imie[3] = "Jola"; 
+
+lub
+
+imie(imie.length) = "Jola";
+
+lub
+
+imie.push("Jola");
+*/ //dodawanie na koniec tablicy
+
+/*
+var imie = ["Ola", "Tomasz", "Wojtek"];
+imie.unshift("Jola");
+---->
+var imie = ["Jola", "Ola", "Tomasz", "Wojtek"];
+*/ //dodawanie na poczatek tablicy
+
+/*
+var imie = ["Ola", "Tomasz", "Wojtek"];
+imie.splice(1,0, "dodana wartosc");
+// 1 odkod dodajemy, 0 czy cos usuwamy, dalej co dodajemy w srodku
+*/
+
+/*
+var imie = ["Ola", "Tomasz", "Wojtek"];
+imie.pop(); #imie = ["Ola", "Tomasz"];
+// usuwanie poczatek
+
+var imie = ["Ola", "Tomasz", "Wojtek"];
+imie.shift() #imie = ["Tomasz", "Wojtek"]; 
+// usuwanie koniec
+
+imie.splice(1,2) okreslamy 1 odkad zaczynamy usuwac Tomasz, x1 ile usuwamy pozniej Tomasz //usuwanie gdzie chcemy
+
+imie.splice(1,2) okreslamy 1 odkad zaczynamy usuwac Tomasz, x2 ile usuwamy pozniej Tomasz Wojtek //usuwanie gdzie chcemy
+*/
+
+//tablice dwuwymiarowe czyli tablica w tablicy np ksiazka telefoniczna
+imie nazwisko telefon
+aa ss 11 
+dd dd 22
+cc vv 33
+[[aa,ss,11], [dd,dd,22], [cc,vv,33]]
+
+
+
+</script>=

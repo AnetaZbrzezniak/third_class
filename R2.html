@@ -1,0 +1,17 @@
+<script>
+
+var bok1 = Number(prompt("Ile wynosi pierwszy bok prostokata?"));
+var bok2 = Number(prompt("Ile wynosi drugi bok prostokata?"));
+var dzialanie = prompt("Co chcesz policzyc? 1 - pole, 2 - obwod");
+var pole = bok1 * bok2;
+var obwod = (2*bok1) + (2*bok2);
+
+if(dzialanie == "1" || dzialanie == "pole"){
+    console.log(pole);
+}
+
+else if(dzialanie == "2" || dzialanie == "obwod"){
+    console.log(obwod);
+}
+
+</script>

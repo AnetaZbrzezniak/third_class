@@ -1,0 +1,30 @@
+<script>
+
+let tab1 = [];
+a = tab1[0];
+b = tab1[1];
+c = tab1[2];
+d = tab1[3];
+e = tab1[4];
+f = tab1[5];
+g = tab1[6];
+h = tab1[7];
+i = tab1[8];
+j = tab1[9];
+k = tab1[10];
+
+for(let i=1; i<=10; i++){
+    rand_liczba = (Math.floor(Math.random() * 100 + 1));
+    tab1.push(rand_liczba);
+}
+console.log(tab1);
+
+function mySort(a,b,c,d,e,f,g,h,i,j,k){
+// return b-a; malejaco
+return a - b; // rosnaco
+}
+
+tab1.sort(mySort);
+console.log(tab1);
+
+</script>

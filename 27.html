@@ -1,0 +1,27 @@
+<script>
+
+function sprawdz1(a,b,licz){
+    var wynik;
+
+    if(licz == "+"){
+        wynik = a + b;
+    }
+    else if(licz == "-"){
+        wynik= a - b;
+    }
+    else if(licz == "*"){
+        wynik= a * b;
+    }
+    else if(licz == "/"){
+        wynik= a / b;
+    }
+    else if(licz == "%"){
+        wynik= a % b;
+    }
+    
+    return wynik;
+}
+var odp = sprawdz1(100, 67, "+");
+console.log(odp);
+
+</script>

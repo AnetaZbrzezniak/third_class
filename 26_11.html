@@ -1,0 +1,28 @@
+<script>
+
+let liczby = []
+while(true){
+    let liczba = Number(prompt("Podaj liczbe, 0-koniec: "));
+    if(liczba == 0){
+        break;
+    }
+    else{
+        liczby.push(liczba);
+    }
+    
+}
+
+let suma = 0;
+for(let x of liczby){
+    console.log(x);
+    suma += x;
+}
+
+console.log(liczby);
+console.log(suma);
+
+let srednia = suma/liczby.length;
+console.log(srednia);
+
+
+</script>

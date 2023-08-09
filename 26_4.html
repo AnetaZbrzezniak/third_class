@@ -1,0 +1,76 @@
+<script>
+
+let kontakty = [];
+
+
+
+while(true){
+
+    let menu = Number(prompt("1-dodaj, 2-pokaz, 3-usun, 4-zmien, 5-koniec"));
+
+    if(menu == 1){
+
+        let imie = prompt("Podaj imie:");
+        let nazwisko = prompt("Podaj nazwisko:");
+        let telefon = prompt("Podaj telefon:");
+
+        let kontakt=[imie, nazwisko, telefon];
+        kontakty.push(kontakt);
+        console.log("Kontakt zostal pomyslnie dodany!");
+
+    }
+    else if(menu == 2){
+        
+        console.log(kontakty);
+        //Imię: .... Nazwisko: ... Telefon: .....
+        //Imię: .... Nazwisko: ... Telefon: .....
+        //Imię: .... Nazwisko: ... Telefon: .....
+        for(let x of kontakty){
+            console.log(x[0], x[1], x[2]);
+        }
+
+    }
+    else if(menu == 3){
+        let nazwisko = prompt("Podaj nazwisko:");
+        for(let x in kontakty){
+            if(kontakty[x][1] == nazwisko){
+                kontakty.splice(x, 1);
+                break;
+            }
+        }
+    } 
+        
+    else if(menu == 4){
+        let nazwisko = prompt("Podaj nazwisko:"); //
+        let noweImie = prompt("Podaj nowe imie:");
+        let noweNazwisko = prompt("Podaj nowe nazwisko:");
+        let nowyTelefon = prompt("Podaj nowy telefon:");
+        for(let x of kontakty){
+            if(x[1] == nazwisko){
+                x[0] = noweImie;
+                x[1] = noweNazwisko;
+                x[2] = nowyTelefon;
+            }
+        }
+    }
+/*
+for(let x in kontakty){
+    if(kontakty[x][1] == nazwisko){
+
+        kontakty[x][0] = noweImie;
+        kontakty[x][1] = noweNazwisko;
+        kontakty[x][2] = noweNumer;
+    }
+}
+*/
+
+
+
+    else if(menu == 5){
+        break;
+    }
+}
+
+
+
+</script>

@@ -1,0 +1,26 @@
+<script>
+
+let tab1 = [];
+let rand_liczba;
+
+
+for(let i=0; i<10; i++){
+    rand_liczba = Math.floor((Math.random() * 10) + 1);
+    tab1.push(rand_liczba);
+}
+
+for(let i of tab1){
+    let ile = 0;
+    for(let j of tab1){
+        if(i == j){
+            ile++
+        }
+    }
+    if(ile >= 2){
+        console.log(i);
+    }
+}
+
+// szukalam innych mozliwych rozwiazan z prezentacji, jak i w internecie. probowalam je zastosowac, ale bezskutecznie, w zwiazku z tym bede wdzieczna za omowienie innych rozwiazan na zajeciach.
+
+</script>

@@ -1,0 +1,51 @@
+<script>
+
+let liczba1;
+let liczba2;
+let liczba3;
+let liczba4;
+let liczba5;
+let pytanie;
+let suma = liczba1 + liczba2;
+var odejmowanie = liczba1 - liczba2;  
+var mnozenie = liczba1 * liczba2;
+let dzialanie = suma || odejmowanie || mnozenie;
+let poprawne = new Set();
+let niepoprawne = new Set();
+
+
+for(let i=1; i<=10; i++){
+
+    liczba1 = Math.floor((Math.random() * 10) + 1);
+    liczba2 = Math.floor((Math.random() * 10) + 1);
+    liczba3 = Math.floor((Math.random() * 3) + 11);
+    liczba4 = Math.floor((Math.random() * 3) + 11);
+    liczba5 = Math.floor((Math.random() * 3) + 11);
+
+    if(liczba3 == 11){
+        dzialanie = "+";
+    }
+    else if(liczba4 == 12){
+        dzialanie = "-";
+    }
+    else if(liczba5 == 13){
+        dzialanie = "*";
+    }
+    let pytanie = Number(prompt(`Ile to jest ${liczba1} ${dzialanie} ${liczba2}?`));
+    console.log(pytanie);
+}
+
+    if(pytanie == suma || pytnie == odejmowanie || pytanie == nmnozenie){
+        set.add(poprawne);
+        console.log(poprawne);
+    }
+    else if(pytanie !== suma || pytanie != odejmowanie || pytanie != mnozenie){
+        set.add(niepoprawne);
+        console.log(niepoprawne);
+    }
+
+
+// niestety statystyka poprawnych i niepoprawnych odpowiedzi nie dziala, prosze o porade
+
+
+</script>
